@@ -1168,6 +1168,9 @@ let currentIndex = 0;
 let score = 0;
 let selectedIndex = null;
 
+// Keep track of incorrect answers for review at the end
+let wrongAnswers = [];
+
 // DOM elements
 const startBtn = document.getElementById('start-btn');
 const nextBtn = document.getElementById('next-btn');
@@ -1178,6 +1181,7 @@ const resultScreen = document.getElementById('result-screen');
 const questionNumber = document.getElementById('question-number');
 const questionText = document.getElementById('question-text');
 const optionsContainer = document.getElementById('options-container');
+const wrongAnswersContainer = document.getElementById('wrong-answers');
 const scoreText = document.getElementById('score-text');
 
 // Progress bar element used to visualise quiz progress.  The corresponding
@@ -1209,6 +1213,11 @@ function startQuiz() {
   currentIndex = 0;
   score = 0;
   selectedIndex = null;
+  // Clear previous incorrect answers
+  wrongAnswers = [];
+  if (wrongAnswersContainer) {
+    wrongAnswersContainer.innerHTML = '';
+  }
   // Hide start and result, show quiz
   startScreen.style.display = 'none';
   resultScreen.style.display = 'none';
@@ -1260,6 +1269,13 @@ function handleNext() {
   const currentQuestion = shuffledQuestions[currentIndex];
   if (selectedIndex === currentQuestion.correctIndex) {
     score++;
+  } else {
+    // Record incorrect answer details for review
+    wrongAnswers.push({
+      question: currentQuestion.question,
+      selected: currentQuestion.options[selectedIndex],
+      correct: currentQuestion.options[currentQuestion.correctIndex]
+    });
   }
   currentIndex++;
   if (currentIndex < shuffledQuestions.length) {
@@ -1277,5 +1293,21 @@ function showResult() {
   // At the end of the quiz the progress bar should be full
   currentIndex = QUIZ_LENGTH;
   updateProgress();
-  // Reset to start screen state so user can retake easily
+  // Populate the incorrect answers summary
+  if (wrongAnswersContainer) {
+    if (wrongAnswers.length > 0) {
+      let listHtml = '<h5 class="mt-4">Incorrect Answers:</h5><ul class="list-group">';
+      wrongAnswers.forEach(item => {
+        listHtml += `<li class="list-group-item">
+          <strong>Question:</strong> ${item.question}<br>
+          <strong>Your answer:</strong> ${item.selected}<br>
+          <strong>Correct answer:</strong> ${item.correct}
+        </li>`;
+      });
+      listHtml += '</ul>';
+      wrongAnswersContainer.innerHTML = listHtml;
+    } else {
+      wrongAnswersContainer.innerHTML = '<p class="mt-4">Great job! All answers are correct.</p>';
+    }
+  }
 }
