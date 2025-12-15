@@ -1,267 +1,267 @@
 // Updated questions from Chapters 7–10 (Risk Management, Portfolio Management and Bank Management)
 // Each question object includes:
 // - type: 'mcq' for multiple choice or 'tf' for true/false
-// - question: the text in Arabic with English terminology where appropriate
-// - options: array of possible answers
+// - question: the text in English
+// - options: array of possible answers in English
 // - correctIndex: index of the correct answer within options
 
 const questions = [
   {
     type: 'mcq',
-    question: 'ما هو الهدف الأساسي لإدارة المخاطر (Risk Management) في البنوك؟',
+    question: 'What is the primary objective of risk management in banks?',
     options: [
-      'تعظيم ربحية المساهمين ضمن حدود المخاطر المقبولة',
-      'تجنب كل أنواع المخاطر بدون استثناء',
-      'زيادة حجم القروض مهما كان الخطر',
-      'إلغاء أنشطة الاستثمار بالكامل'
+      'Maximizing shareholder wealth within acceptable risk limits',
+      'Avoiding all types of risk without exception',
+      'Increasing the loan portfolio regardless of risk',
+      'Eliminating all investment activities completely'
     ],
     correctIndex: 0
   },
   {
     type: 'mcq',
-    question: 'يشير مصطلح Risk Measurement إلى:',
+    question: 'The term risk measurement refers to:',
     options: [
-      'قياس حجم المخاطر دون اتخاذ أي إجراءات لمعالجتها',
-      'اتخاذ قرارات فورية لتقليل المخاطر',
-      'توظيف موظفين جدد في البنك',
-      'إدارة المحفظة الاستثمارية'
+      'Measuring the size of risk without taking any action to address it',
+      'Taking immediate decisions to reduce risk',
+      'Hiring new employees at the bank',
+      'Managing the investment portfolio'
     ],
     correctIndex: 0
   },
   {
     type: 'mcq',
-    question: 'في إطار إدارة الأصول والخصوم (ALM)، يشير عدم التوافق بين آجال الأصول والخصوم إلى خطر:',
+    question: 'Within asset-liability management (ALM), mismatching maturities of assets and liabilities refers to the risk of:',
     options: [
-      'السيولة (Liquidity Risk)',
-      'الائتمان (Credit Risk)',
-      'المشتقات (Derivative Risk)',
-      'العملة (Currency Risk)'
+      'Liquidity risk',
+      'Credit risk',
+      'Derivative risk',
+      'Currency risk'
     ],
     correctIndex: 0
   },
   {
     type: 'mcq',
-    question: 'تفرض لجنة بازل (Basel Committee) على البنوك الاحتفاظ برأس مال إضافي عندما:',
+    question: 'The Basel Committee requires banks to hold additional capital when:',
     options: [
-      'ترتفع مخاطر محفظة القروض',
-      'تنخفض أرباح البنك',
-      'يزداد عدد الفروع',
-      'يتغير سعر الصرف'
+      'The risk of the loan portfolio increases',
+      'Bank profits decline',
+      'The number of branches increases',
+      'The exchange rate changes'
     ],
     correctIndex: 0
   },
   {
     type: 'mcq',
-    question: 'Credit Risk Management يهدف إلى:',
+    question: 'Credit risk management aims to:',
     options: [
-      'تحقيق أعلى عائد ممكن ضمن مخاطر مقبولة',
-      'تجنب منح أي قروض',
-      'زيادة حجم المخزون النقدي فقط',
-      'إلغاء عمليات الدفع الإلكتروني'
+      'Achieve the highest possible return within acceptable risk',
+      'Avoid granting any loans',
+      'Increase cash reserves only',
+      'Eliminate electronic payment operations'
     ],
     correctIndex: 0
   },
   {
     type: 'mcq',
-    question: 'ماذا يعني مصطلح Correlated Defaults؟',
+    question: 'What does the term correlated defaults mean?',
     options: [
-      'تعثر عدد كبير من المقترضين بسبب ارتباطهم بقطاع أو منطقة واحدة',
-      'سداد جميع القروض في وقت واحد',
-      'تراجع أسعار الفائدة',
-      'تعويم العملة في الأسواق'
+      'Default of a large number of borrowers because they are linked to a single sector or region',
+      'Repayment of all loans at once',
+      'Decline in interest rates',
+      'Floating the currency in the markets'
     ],
     correctIndex: 0
   },
   {
     type: 'mcq',
-    question: 'Retail Credit يختلف عن Wholesale Credit بأن الأول يتميز بـ:',
+    question: 'Retail credit differs from wholesale credit in that the former has:',
     options: [
-      'عدد كبير من المقترضين وقروض صغيرة',
-      'قروض كبيرة لعدد قليل من الشركات',
-      'عدم وجود مخاطر ائتمانية',
-      'تأمين حكومي كامل لجميع القروض'
+      'A large number of borrowers and small loans',
+      'Large loans to a few companies',
+      'No credit risk',
+      'Full government guarantee for all loans'
     ],
     correctIndex: 0
   },
   {
     type: 'mcq',
-    question: 'Risk–Return Trade‑Off يعني:',
+    question: 'Risk–return trade-off means:',
     options: [
-      'مقايضة بين مستوى المخاطرة والعائد المتوقع',
-      'إلغاء جميع المخاطر من العمليات',
-      'تحويل المخاطر إلى عملة أجنبية',
-      'زيادة المخاطر بدون أي عائد'
+      'A trade-off between the level of risk and the expected return',
+      'Eliminating all risks from operations',
+      'Converting risks into foreign currency',
+      'Increasing risks without any return'
     ],
     correctIndex: 0
   },
   {
     type: 'mcq',
-    question: 'Gap Analysis في إدارة مخاطر سعر الفائدة يقيس:',
+    question: 'Gap analysis in interest rate risk management measures:',
     options: [
-      'الفرق بين الأصول والخصوم الحساسة لمعدلات الفائدة',
-      'مستوى الفساد الداخلي في البنك',
-      'عدد الموظفين في البنك',
-      'التغيرات في سعر الصرف'
+      'The difference between interest rate-sensitive assets and liabilities',
+      'The level of internal corruption in the bank',
+      'The number of employees in the bank',
+      'Changes in the exchange rate'
     ],
     correctIndex: 0
   },
   {
     type: 'mcq',
-    question: 'Duration Analysis يستخدم لقياس:',
+    question: 'Duration analysis is used to measure:',
     options: [
-      'حساسية قيمة الأصل لتغير معدلات الفائدة',
-      'مدة خدمة الموظف في البنك',
-      'عدد الفروع المنتشرة',
-      'معدل التضخم في الاقتصاد'
+      'The sensitivity of the value of an asset to changes in interest rates',
+      'The length of service of employees in the bank',
+      'The number of branches',
+      'The inflation rate in the economy'
     ],
     correctIndex: 0
   },
   {
     type: 'mcq',
-    question: 'من أسباب نقص السيولة في البنوك (Liquidity Risk) وجود:',
+    question: 'One cause of liquidity shortage in banks (liquidity risk) is:',
     options: [
-      'سحوبات كبيرة للودائع بينما الأصول طويلة الأجل وغير سائلة',
-      'ارتفاع أرباح البنك بشكل كبير',
-      'تخفيض معدلات الفائدة بشكل مستمر',
-      'زيادة رأس المال المدفوع'
+      'Large withdrawals of deposits while assets are long-term and illiquid',
+      'A sharp increase in the bank\'s profits',
+      'Continuous reduction of interest rates',
+      'Increase in paid-up capital'
     ],
     correctIndex: 0
   },
   {
     type: 'mcq',
-    question: 'Value at Risk (VaR) يُستخدم لقياس:',
+    question: 'Value at Risk (VaR) is used to measure:',
     options: [
-      'الخسارة المحتملة نتيجة تقلبات السوق خلال فترة محددة',
-      'إجمالي الأصول الثابتة في البنك',
-      'إجمالي الودائع الموجودة',
-      'عدد العملاء الجدد في الفرع'
+      'The potential loss due to market fluctuations over a specified period',
+      'The total fixed assets in the bank',
+      'The total deposits',
+      'The number of new customers in the branch'
     ],
     correctIndex: 0
   },
   {
     type: 'mcq',
-    question: 'يشمل Operational Risk:',
+    question: 'Operational risk includes:',
     options: [
-      'أخطاء بشرية، فشل الأنظمة، احتيال وأحداث خارجية',
-      'تقلبات أسعار الأسهم في السوق',
-      'تغير أسعار الفائدة في الأسواق',
-      'تذبذب أسعار العملات الأجنبية'
+      'Human errors, system failures, fraud and external events',
+      'Fluctuations in stock prices in the market',
+      'Changes in interest rates in the markets',
+      'Fluctuations in foreign exchange rates'
     ],
     correctIndex: 0
   },
   {
     type: 'mcq',
-    question: 'Country Risk هو الخطر الناتج عن:',
+    question: 'Country risk is the risk arising from:',
     options: [
-      'مشاكل سياسية أو اقتصادية في الدولة الأجنبية التي يعمل فيها البنك',
-      'عدم قدرة العميل على السداد',
-      'اختراق أنظمة البنك المعلوماتية',
-      'تغير أسعار النفط في الأسواق العالمية'
+      'Political or economic problems in the foreign country where the bank operates',
+      'The customer\'s inability to repay',
+      'Hacking of the bank\'s information systems',
+      'Changes in oil prices in global markets'
     ],
     correctIndex: 0
   },
   {
     type: 'mcq',
-    question: 'في إدارة محفظة البنك (Portfolio Management)، تعتبر القروض:',
+    question: 'In bank portfolio management, loans are:',
     options: [
-      'أصل رئيسي يحقق ربحاً مرتفعاً لكنه يحمل مخاطر عالية',
-      'أصل عديم الفائدة ولا يدر أي ربح',
-      'أصل ثابت بدون أي مخاطر',
-      'خسارة مستمرة للبنك'
+      'A principal asset generating high profits but carrying high risk',
+      'A worthless asset generating no profit',
+      'A fixed asset without any risk',
+      'A continuous loss for the bank'
     ],
     correctIndex: 0
   },
   {
     type: 'mcq',
-    question: 'من أهداف محفظة الاستثمار لدى البنك:',
+    question: 'The objectives of the bank\'s investment portfolio include:',
     options: [
-      'الأمان، السيولة، العائد، التنويع، إدارة مخاطر الفائدة، ومتطلبات الرهن',
-      'زيادة المخاطر فقط لتحقيق أرباح سريعة',
-      'إلغاء الاستثمار في جميع السندات والأسهم',
-      'التركيز على الأسهم عالية المخاطر فقط'
+      'Safety, liquidity, yield, diversification, interest rate risk management, and pledging requirements',
+      'Increasing risk only to achieve quick profits',
+      'Eliminating investment in all bonds and stocks',
+      'Focusing only on high-risk stocks'
     ],
     correctIndex: 0
   },
   {
     type: 'mcq',
-    question: 'أدوات Money Market تتميز بأنها:',
+    question: 'Money market instruments are characterized by:',
     options: [
-      'قصيرة الأجل، عالية السيولة، ذات مخاطر منخفضة',
-      'طويلة الأجل، ذات مخاطر عالية',
-      'استثمارات عقارية معقدة',
-      'حصص في شركات التكنولوجيا فقط'
+      'Short-term, high liquidity, low risk',
+      'Long-term, high risk',
+      'Complex real estate investments',
+      'Shares only in technology companies'
     ],
     correctIndex: 0
   },
   {
     type: 'mcq',
-    question: 'أدوات Capital Market تشمل:',
+    question: 'Capital market instruments include:',
     options: [
-      'سندات طويلة الأجل، أسهم، وأوراق مالية مدعومة بالرهون',
-      'ودائع جارية وحسابات توفير',
-      'بطاقات ائتمان وقروض شخصية فقط',
-      'عملات رقمية بدون ضوابط'
+      'Long-term bonds, stocks and mortgage-backed securities',
+      'Current deposits and savings accounts',
+      'Credit cards and personal loans only',
+      'Cryptocurrencies without regulations'
     ],
     correctIndex: 0
   },
   {
     type: 'mcq',
-    question: 'سندات Held‑to‑Maturity تُسجل في الدفاتر:',
+    question: 'Held-to-maturity bonds are recorded in the books:',
     options: [
-      'بالقيمة المطفأة (amortized cost) ولا تظهر التغيرات السوقية في الأرباح أو الخسائر',
-      'بالقيمة السوقية وتُسجل التغيرات في قائمة الدخل',
-      'بالقيمة العادلة وتُسجل التغيرات في حقوق الملكية',
-      'وفقاً لطريقة التكلفة التاريخية مع إعادة تقييم سنوية'
+      'At amortized cost with no recognition of market changes in profits or losses',
+      'At market value with changes recognized in the income statement',
+      'At fair value with changes recorded in equity',
+      'According to historical cost with annual revaluation'
     ],
     correctIndex: 0
   },
   {
     type: 'mcq',
-    question: 'Trading Securities تتميز بأنها:',
+    question: 'Trading securities are characterized by:',
     options: [
-      'تُقيّم بالقيمة السوقية وتنعكس التغيرات فوراً في قائمة الدخل',
-      'يتم الاحتفاظ بها حتى تاريخ الاستحقاق دون بيع',
-      'لا يمكن بيعها قبل تاريخ معين',
-      'لا يتم الاعتراف بأي أرباح أو خسائر عليها'
+      'Valued at market value with changes immediately recognized in the income statement',
+      'Held to maturity without sale',
+      'Cannot be sold before a certain date',
+      'No recognition of any profits or losses'
     ],
     correctIndex: 0
   },
   {
     type: 'tf',
-    question: 'مدير المخاطر في البنك يسعى دائماً إلى تحقيق توازن بين العائد والمخاطرة.',
+    question: 'The risk manager in the bank always strives to achieve a balance between return and risk.',
     options: ['True', 'False'],
     correctIndex: 0
   },
   {
     type: 'tf',
-    question: 'Risk Measurement يركز فقط على قياس المخاطر دون اتخاذ إجراءات للتعامل معها.',
+    question: 'Risk measurement focuses only on measuring risk without taking actions to deal with it.',
     options: ['True', 'False'],
     correctIndex: 0
   },
   {
     type: 'tf',
-    question: 'Correlated Defaults تعتبر أقل خطورة من التعثرات غير المترابطة.',
-    options: ['True', 'False'],
-    correctIndex: 1
-  },
-  {
-    type: 'tf',
-    question: 'في Gap Analysis، إذا كانت الخصوم الحساسة للفائدة أكبر من الأصول الحساسة للفائدة، يستفيد البنك من ارتفاع معدل الفائدة.',
+    question: 'Correlated defaults are considered less risky than uncorrelated defaults.',
     options: ['True', 'False'],
     correctIndex: 1
   },
   {
     type: 'tf',
-    question: 'امتلاك سيولة كافية أمر ضروري لسلامة البنك حتى لو كانت أرباحه مرتفعة.',
+    question: 'In gap analysis, if interest-sensitive liabilities exceed interest-sensitive assets, the bank benefits from an increase in the interest rate.',
+    options: ['True', 'False'],
+    correctIndex: 1
+  },
+  {
+    type: 'tf',
+    question: 'Having adequate liquidity is necessary for the safety of the bank even if its profits are high.',
     options: ['True', 'False'],
     correctIndex: 0
   }
 ];
 
-// عدد الأسئلة التي ستظهر في كل محاولة من الاختبار. يمكن تعديل الرقم حسب الحاجة.
+// Number of questions to display in each quiz attempt. You can adjust this value as needed.
 const QUIZ_LENGTH = 15;
 
-// دالة لخلط مصفوفة الأسئلة (خوارزمية فيشر-ياتس)
+// Function to shuffle an array (Fisher-Yates algorithm)
 function shuffle(array) {
   const arr = array.slice();
   for (let i = arr.length - 1; i > 0; i--) {
@@ -271,16 +271,16 @@ function shuffle(array) {
   return arr;
 }
 
-// متغيرات الحالة
+// State variables
 let shuffledQuestions = [];
 let currentIndex = 0;
 let score = 0;
 let selectedIndex = null;
 
-// لتتبع الإجابات الخاطئة وعرضها في النهاية
+// To track wrong answers and display them at the end
 let wrongAnswers = [];
 
-// عناصر DOM
+// DOM elements
 const startBtn = document.getElementById('start-btn');
 const nextBtn = document.getElementById('next-btn');
 const retakeBtn = document.getElementById('retake-btn');
@@ -293,113 +293,11 @@ const optionsContainer = document.getElementById('options-container');
 const wrongAnswersContainer = document.getElementById('wrong-answers');
 const scoreText = document.getElementById('score-text');
 
-// شريط التقدم
+// Progress bar
 const progressBar = document.getElementById('progress-bar');
 
-// تحديث شريط التقدم بحسب السؤال الحالي
+// Update the progress bar based on the current question index
 function updateProgress() {
-  const percent = (currentIndex / QUIZ_LENGTH) * 100;
-  progressBar.style.width = `${percent}%`;
-  progressBar.setAttribute('aria-valuenow', percent.toFixed(0));
-  progressBar.textContent = `${currentIndex} / ${QUIZ_LENGTH}`;
-}
-
-// بدء أو إعادة بدء الاختبار
-startBtn.addEventListener('click', startQuiz);
-nextBtn.addEventListener('click', handleNext);
-retakeBtn.addEventListener('click', startQuiz);
-
-function startQuiz() {
-  shuffledQuestions = shuffle(questions).slice(0, QUIZ_LENGTH);
-  currentIndex = 0;
-  score = 0;
-  selectedIndex = null;
-  wrongAnswers = [];
-  if (wrongAnswersContainer) {
-    wrongAnswersContainer.innerHTML = '';
-  }
-  startScreen.style.display = 'none';
-  resultScreen.style.display = 'none';
-  quizContainer.style.display = 'block';
-  updateProgress();
-  showQuestion();
-}
-
-// عرض السؤال الحالي وخياراته
-function showQuestion() {
-  const q = shuffledQuestions[currentIndex];
-  questionNumber.textContent = `Question ${currentIndex + 1} of ${QUIZ_LENGTH}`;
-  questionText.textContent = q.question;
-  optionsContainer.innerHTML = '';
-  selectedIndex = null;
-  nextBtn.disabled = true;
-  q.options.forEach((option, index) => {
-    const optionId = `option-${currentIndex}-${index}`;
-    const div = document.createElement('div');
-    div.className = 'form-check';
-    const input = document.createElement('input');
-    input.type = 'radio';
-    input.name = 'question-options';
-    input.id = optionId;
-    input.className = 'form-check-input';
-    input.value = index;
-    input.addEventListener('change', () => {
-      selectedIndex = parseInt(input.value);
-      nextBtn.disabled = false;
-    });
-    const label = document.createElement('label');
-    label.className = 'form-check-label';
-    label.htmlFor = optionId;
-    label.textContent = option;
-    div.appendChild(input);
-    div.appendChild(label);
-    optionsContainer.appendChild(div);
-  });
-  updateProgress();
-}
-
-// معالجة اختيار الإجابة والانتقال للسؤال التالي أو إظهار النتيجة
-function handleNext() {
-  if (selectedIndex === null) return;
-  const currentQuestion = shuffledQuestions[currentIndex];
-  if (selectedIndex === currentQuestion.correctIndex) {
-    score++;
-  } else {
-    wrongAnswers.push({
-      question: currentQuestion.question,
-      selected: currentQuestion.options[selectedIndex],
-      correct: currentQuestion.options[currentQuestion.correctIndex]
-    });
-  }
-  currentIndex++;
-  if (currentIndex < shuffledQuestions.length) {
-    showQuestion();
-  } else {
-    showResult();
-  }
-}
-
-// إظهار نتيجة الاختبار
-function showResult() {
-  quizContainer.style.display = 'none';
-  resultScreen.style.display = 'block';
-  scoreText.textContent = `أجبت بشكل صحيح على ${score} من أصل ${QUIZ_LENGTH} سؤال.`;
-  currentIndex = QUIZ_LENGTH;
-  updateProgress();
-  if (wrongAnswersContainer) {
-    if (wrongAnswers.length > 0) {
-      let listHtml = '<h5 class="mt-4">الإجابات الخاطئة:</h5><ul class="list-group">';
-      wrongAnswers.forEach(item => {
-        listHtml += `<li class="list-group-item">
-          <strong>السؤال:</strong> ${item.question}<br>
-          <strong>إجابتك:</strong> ${item.selected}<br>
-          <strong>الإجابة الصحيحة:</strong> ${item.correct}
-        </li>`;
-      });
-      listHtml += '</ul>';
-      wrongAnswersContainer.innerHTML = listHtml;
-    } else {
-      wrongAnswersContainer.innerHTML = '<p class="mt-4">عمل رائع! جميع الإجابات صحيحة.</p>';
-    }
-  }
+  const progress = ((currentIndex + 1) / QUIZ_LENGTH) * 100;
+  progressBar.style.width = `${progress}%`;
 }
